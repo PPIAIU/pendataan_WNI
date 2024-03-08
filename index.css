@@ -1,0 +1,199 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+.bgimg {
+  background-image: url('/sekjen.png');
+  opacity: 15%;
+  background-color: #131417;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middle > .font-welcome, .font-welcome2 {
+  background: -webkit-linear-gradient(#ce0b0b, #6b6464);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 30px;
+}
+
+.logo {
+  height: 30px;
+  animation: mymove 1s infinite;
+  position: relative;
+}
+
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+@keyframes mymove {
+  0 {top: 0px;}
+  50% {top: 5px !important;} /* ignored */
+  100% {top: 5.1px;}
+  0 {top: 0px;}
+}
+
+
+
+/* segment 2 */
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+  font-family:'Roboto';
+  background-color: #131417;  
+}
+.container > p {
+  text-shadow: 0 0 7px rgba(16, 16, 16, 0.2), 0 0 3px rgba(19, 18, 18, 0.2);
+  color: rgb(104, 98, 98);
+}
+.container {
+  color: white;
+  font-size: 10px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  /* height:1rem; */
+  margin-bottom: 2.5rem;
+  display:inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  background-color:#20a7d8;
+}
+.second div {
+  background-color:#CD921E;
+}
+.third div {
+  background-color:#c10528;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0.5rem;}
+  10% {margin-top: 0.5rem;}
+  20% {margin-top: -2.5rem;}
+  30% {margin-top: -2.5rem;}
+  40% {margin-top: -5.62rem;}
+  60% {margin-top: -5.62rem;}
+  70% {margin-top: -2.5rem;}
+  80% {margin-top: -2.5rem;}
+  90% {margin-top: 0.5rem;}
+  100% {margin-top: 0.5rem;}
+}
+
+
+
+
+
+
+/* segment 3 */
+@font-face {
+  font-family: Digital-7 Mono;
+  src: url(digital-7.ttf);
+}
+
+.font-color{
+  background: linear-gradient(to bottom,red,#2c3e50);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+}
+.content div{
+  padding: 5px 0;
+}
+.timeDiv{
+  position: relative;
+  margin-top: 12px;
+
+}
+#time{
+  text-shadow: 0 0 55px red;
+  font-size: 2rem;
+}
+#med{
+  position:absolute;
+  top: 15px;
+  right: 0;
+  margin-left: 0;
+}
+.dayDiv{
+  display: flex;
+  /* justify-content: space-between; */
+}
+.dayDiv span{
+  font-size: 0.6rem;
+  opacity: 0.4;
+  margin-left: 40px;
+}
+
+
+
+/* mobile */
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .bgimg {
+    background-image: url('/sekjen-mobile.png');
+    opacity: 20%;
+    background-color: #131417;
+    height: 100%;
+    background-position: center -50px ; 
+    background-size: cover;
+    position: relative; 
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+  }
+
+  body {
+    margin: 0;
+  }
+  .middle {
+    top: 35%;
+  }
+}
