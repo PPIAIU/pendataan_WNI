@@ -177,7 +177,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .bgimg {
-    background-image: url('/sekjen-mobile.png');
+    background-image: url('sekjen-mobile.png');
     opacity: 20%;
     height: 100%;
     background-position: center -50px ; 
