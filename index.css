@@ -179,7 +179,6 @@ body {
   .bgimg {
     background-image: url('/sekjen-mobile.png');
     opacity: 20%;
-    background-color: #131417;
     height: 100%;
     background-position: center -50px ; 
     background-size: cover;
